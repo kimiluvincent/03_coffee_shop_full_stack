@@ -65,12 +65,6 @@ def get_drinks_details(payload):
         "drinks":drinks
     }),200
 
-
-
-    
-
-
-
 '''
 @TODO implement endpoint
     POST /drinks
@@ -201,7 +195,7 @@ def unprocessable(error):
     return jsonify({
         "success": False,
         "error": 422,
-        "message": "unprocessable"
+        "message": "Not Processable"
     }), 422
 @app.errorhandler(404)
 def unprocessable(error):
